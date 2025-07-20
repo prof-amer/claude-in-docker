@@ -4,14 +4,28 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "22"
-    }
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && npm install -g @anthropic-ai/claude-code",
   "customizations": {
     "vscode": {
       "extensions": [
+        "adamraichu.zip-viewer",
+        "charliermarsh.ruff",
+        "dvirtz.parquet-viewer",
+        "esbenp.prettier-vscode",
+        "mechatroner.rainbow-csv",
+        "ms-python.debugpy",
         "ms-python.python",
-        "ms-python.pylint"
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-vscode-remote.remote-containers",
+        "shinotatwu-ds.file-tree-generator"
       ]
     }
   },
